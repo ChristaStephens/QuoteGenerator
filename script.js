@@ -22,7 +22,8 @@ function quoteRefresh() {
     $('.icon').attr('src',icon);
 
     //string method changes unicode to characters
-    var temp = data.main.temp;
+    //math.floor shows number without decimals
+    var temp = Math.floor(data.main.temp);
     $('.temp').append(temp + String.fromCharCode(8457));
 
     var weather = data.weather[0].main;

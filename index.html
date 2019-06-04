@@ -6,25 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="javascript" href="index.js"> -->
     <title>Quote Generator</title>
 </head>
 <body>
     <h1>Good Morning</h1>
-    <p id="Date"></p>
-    <script> document.getElementById("Date").innerHTML ="Today's date is: " + date1;</script>
-
-    <button onclick="quoteRefresh()">Refresh Quote</button>
 
 
     <div class= "weather-container"> </div>
     <img class= "icon">
     <p class="weather"></p>
-    <p class ="temp" + &deg></p>
+    <p class ="temp"></p>
     <p class ="time"></p>
     <p class ="sunrise"></p>
     <p class="sunset"></p>
 
+    <p id="Date"></p>
+    <script> document.getElementById("Date").innerHTML ="Today's date is: " + date1;</script>
+
+    <button onclick="quoteRefresh()">Refresh Quote</button>
     <div></div>
 
 </body>
