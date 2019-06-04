@@ -21,9 +21,16 @@
             <img src="https://source.unsplash.com/300x300/?travel?sky?nature?animals" />
     </section>
 
+    <!-- <section >
+        <p class="qod"></p>
+        <p class="author"></p>
+        <p class="date"></p>
+    </section> -->
 
     <section class=quote>
-
+        <blockquote id="qod-quote">
+            ... loading ...
+         </blockquote>
     </section>
 
 
@@ -43,8 +50,10 @@
     <p id="Date"></p>
     <script> document.getElementById("Date").innerHTML = "Today's date is: " + date1;</script>
 
-    <button onclick="quoteRefresh()">Refresh Quote</button>
-    <div></div>
+
+
+    <script src="http://quotesondesign.com/api/3.0/api-3.0.js"
+type="text/javascript" charset="utf-8"></script>
 
 </body>
 

@@ -30,3 +30,11 @@ function quoteRefresh() {
     $('.weather').append(weather);
 
   });
+
+
+  // $.getJSON("https://favqs.com/api/qotd", function(quote){
+  //   console.log(quote);
+
+  //   var qod = quote.body;
+  //   $('.qod').html(quote.qod);
+  // });
