@@ -28,4 +28,5 @@ function quoteRefresh() {
 
     var weather = data.weather[0].main;
     $('.weather').append(weather);
+
   });
