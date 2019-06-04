@@ -1,4 +1,4 @@
-# TodoList
+# Quote Generator
 A quote generator that aims to: <br>
 Show the weather <br>
 Show a picture of the day <br>
