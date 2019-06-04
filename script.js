@@ -2,11 +2,15 @@
 // moment(new Date).format("MMMM YYYY");
 
 
-var date1 = new Date();
+// var date1 = new Date();
 
-function quoteRefresh() {
-    document.getElementById("demo").innerHTML = "Hello World";
-  }
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var today  = new Date();
+
+console.log(today.toLocaleDateString("en-US")); // 9/17/2016
+console.log(today.toLocaleDateString("en-US", options)); // Saturday, September 17, 2016
+console.log(today.toLocaleDateString("hi-IN", options)); // शनिवार, 17 सितंबर 2016
+
 
 /*
   requesting JSON data created by WeatherBit. Arrow function
@@ -30,11 +34,3 @@ function quoteRefresh() {
     $('.weather').append(weather);
 
   });
-
-
-  // $.getJSON("https://favqs.com/api/qotd", function(quote){
-  //   console.log(quote);
-
-  //   var qod = quote.body;
-  //   $('.qod').html(quote.qod);
-  // });

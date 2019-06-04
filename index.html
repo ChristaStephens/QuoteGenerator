@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Aleo|Charm|EB+Garamond|Mali|Montserrat&display=swap"
         rel="stylesheet">
-
-    <!-- <link rel="javascript" href="index.js"> -->
     <title>Quote Generator</title>
 </head>
 
@@ -20,12 +18,6 @@
     <section class=picture>
             <img src="https://source.unsplash.com/600x400/?travel?sky?nature?animals" />
     </section>
-
-    <!-- <section >
-        <p class="qod"></p>
-        <p class="author"></p>
-        <p class="date"></p>
-    </section> -->
 
     <section class=quote>
         <blockquote id="qod-quote">
@@ -40,15 +32,13 @@
             <p class="weather"></p>
             <p class="temp"></p>
             <p class="time"></p>
-            <p class="sunrise"></p>
-            <p class="sunset"></p>
         </div>
 
     </section>
 
 
     <p id="Date"></p>
-    <script> document.getElementById("Date").innerHTML = "Today's date is: " + date1;</script>
+    <script> document.getElementById("Date").innerHTML = "Today's date is: " + today.toLocaleDateString("en-US", options);</script>
 
 
 
