@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aleo|Charm|EB+Garamond|Mali|Montserrat&display=swap"
+        rel="stylesheet">
+
     <!-- <link rel="javascript" href="index.js"> -->
     <title>Quote Generator</title>
 </head>
+
 <body>
     <h1>Good Morning</h1>
+    <section class=picture>
+
+    </section>
 
 
-    <div class= "weather-container"> </div>
-    <img class= "icon">
-    <p class="weather"></p>
-    <p class ="temp"></p>
-    <p class ="time"></p>
-    <p class ="sunrise"></p>
-    <p class="sunset"></p>
+    <section class=quote>
+
+    </section>
+
+
+    <section class=weather-container>
+        <div>
+            <img class="icon">
+            <p class="weather"></p>
+            <p class="temp"></p>
+            <p class="time"></p>
+            <p class="sunrise"></p>
+            <p class="sunset"></p>
+        </div>
+
+    </section>
+
 
     <p id="Date"></p>
-    <script> document.getElementById("Date").innerHTML ="Today's date is: " + date1;</script>
+    <script> document.getElementById("Date").innerHTML = "Today's date is: " + date1;</script>
 
     <button onclick="quoteRefresh()">Refresh Quote</button>
     <div></div>
 
 </body>
+
 </html>
