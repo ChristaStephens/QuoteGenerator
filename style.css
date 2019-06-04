@@ -12,6 +12,12 @@ body{
     font-family: 'Mali', cursive;
 }
 
+.picture{
+    float: left;
+    margin: 0 1.5%;
+    width: 50%;
+}
+
 h1{
     text-align: center;
     font-family: 'Mali', cursive;
@@ -27,4 +33,10 @@ h1{
     font-size: 60px;
     margin: 0;
     font-weight: bold;
+}
+
+.quote{
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
 }
