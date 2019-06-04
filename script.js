@@ -15,6 +15,16 @@ function quoteRefresh() {
   $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=detroit&units=imperial&appid=6ccdde3b5bf6715b81441f3f37bce188",data => {
     console.log(data);
     var icon ="http://openweathermap.org/img/w/" + data.weather[0].icon +".png";
+   /*
+    allows the icon to show in the dom, using the icon
+    tag and showing where the source is coming from
+     */
+    $('.icon').attr('src',icon);
 
-    console.log(icon);
+    //string method changes unicode to characters
+    var temp = data.main.temp;
+    $('.temp').append(temp + String.fromCharCode(8457));
+
+    var weather = data.weather[0].main;
+    $('.weather').append(weather);
   });
